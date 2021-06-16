@@ -12,6 +12,7 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
+    "types": ["jest"],
     // 根据别名配置相关路径,会有路径提示
     // Cannot find module '@/router' or its corresponding type declarations.
     // "baseUrl": "./",
@@ -23,6 +24,6 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue","test"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }
