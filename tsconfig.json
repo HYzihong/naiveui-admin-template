@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    // 使用<script setup>报错
+    // bservices are not working for this script block because virtual file is not found in TS server, maybe try to add lang="ts" to <script> or add `"allowJs": true` to tsconfig.json
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    // 根据别名配置相关路径,会有路径提示
+    // Cannot find module '@/router' or its corresponding type declarations.
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@/*": ["./src/*"]
+    // }
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "dist", "**/*.js"]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "naiveui-admin-template",
+  "version": "0.0.1",
+  "scripts": {
+    "bootstrap": "yarn install",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern",
+    "commit": "git add -A && npx git-cz"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": "eslint --fix",
+    "*": "prettier -w -u"
+  },
+  "dependencies": {
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.8"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "chalk": "^4.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.28.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.11.1",
+    "lint-staged": "^11.0.0",
+    "naive-ui": "^2.11.11",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.2",
+    "vfonts": "^0.1.0",
+    "vite": "^2.3.7",
+    "vue-tsc": "^0.0.24"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
