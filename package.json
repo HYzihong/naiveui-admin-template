@@ -7,7 +7,13 @@
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
     "lint": "eslint --ext .ts,vue src/** --no-error-on-unmatched-pattern",
-    "commit": "git add -A && npx git-cz"
+    "commit": "git add -A && npx git-cz",
+    "test-unit": "jest",
+    "test-e2e": "cypress open",
+    "test-e2e-ci": "cypress run",
+    "test-ct": "cypress open-ct",
+    "test-ct-ci": "cypress run-ct",
+    "test": "yarn test-unit && yarn test-ct-ci && yarn test-e2e-ci"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -32,6 +38,7 @@
     "@vue/eslint-config-typescript": "^7.0.0",
     "babel-jest": "^27.0.2",
     "chalk": "^4.1.1",
+    "cypress": "^7.5.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.28.0",
     "eslint-plugin-prettier": "^3.4.0",
