@@ -1,12 +1,5 @@
-/*
- * @Author: your name
- * @Date: 2021-06-16 09:28:30
- * @LastEditTime: 2021-06-16 09:46:49
- * @LastEditors: your name
- * @Description: In User Settings Edit
- * @FilePath: /yh-admin/scripts/verifyCommit.js
- */
 // Invoked on the commit-msg git hook by yorkie.
+// https://github.com/vitejs/vite/blob/main/scripts/verifyCommit.js
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const chalk = require("chalk");
 const msgPath = process.env.GIT_PARAMS;

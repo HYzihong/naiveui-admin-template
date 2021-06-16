@@ -987,7 +987,7 @@
     "@vue/compiler-dom" "3.1.1"
     "@vue/shared" "3.1.1"
 
-"@vue/devtools-api@^6.0.0-beta.10":
+"@vue/devtools-api@^6.0.0-beta.10", "@vue/devtools-api@^6.0.0-beta.12":
   version "6.0.0-beta.14"
   resolved "https://registry.nlark.com/@vue/devtools-api/download/@vue/devtools-api-6.0.0-beta.14.tgz#6ed2d6f8d66a9256c9ad04bfff08309ba87b9723"
   integrity sha1-btLW+NZqklbJrQS//wgwm6h7lyM=
@@ -4151,6 +4151,13 @@ pify@^2.2.0:
   version "2.3.0"
   resolved "https://registry.npm.taobao.org/pify/download/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha1-7RQaasBDqEnqWISY59yosVMw6Qw=
+
+pinia@^2.0.0-beta.2:
+  version "2.0.0-beta.2"
+  resolved "https://registry.nlark.com/pinia/download/pinia-2.0.0-beta.2.tgz#2d4321166ad77950abc35036dbefead0f0c81319"
+  integrity sha1-LUMhFmrXeVCrw1A22+/q0PDIExk=
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.12"
 
 pirates@^4.0.1:
   version "4.0.1"
